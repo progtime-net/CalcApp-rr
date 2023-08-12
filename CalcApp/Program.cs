@@ -1,8 +1,11 @@
-﻿internal class Program
+﻿using System.Data;
+using System.Runtime.InteropServices;
+
+internal class Program
 {
     private static void Main(string[] args)
     {
-        Console.WriteLine("Hello, World!");
+        
     }
 }
 
@@ -16,4 +19,8 @@ interface ICalculatorInput
 interface ICalculator
 {
     float Operation(float a, float b);
+}
+ interface ICalculatorOne
+{
+    float Operation(float a);
 }
