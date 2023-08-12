@@ -9,6 +9,20 @@ internal class Program
     }
 }
 
+class RootSquare : ICalculatorOne
+{
+    public float Operation(float a)
+    {
+        return (float)Math.Sqrt(a);
+    }
+}
+class Square : ICalculatorOne
+{
+    public float Operation(float a)
+    {
+        return (float)Math.Pow(a, 2);
+    }
+}
 interface ICalculatorInput
 {
     string[] ParseInput(string input);
